@@ -1,4 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-gray-900 text-white;
+	}
+	h1 {
+		@apply text-4xl font-semibold mb-4;
+	}
+	h2 {
+		@apply text-2xl mb-2;
+	}
+	code {
+		@apply text-lime-400 bg-lime-900/30 px-2 rounded;
+	}
+	p {
+		@apply font-thin mb-4;
+	}
+}
+
+/* Custom Scrollbar CSS */
+::-webkit-scrollbar {
+	width: 6px; /* Largura do scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: transparent; /* Cor do track do Tailwind (gray-100) */
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #a3e635; /* Cor do thumb do Tailwind (gray-500) */
+	border-radius: 6px; /* Raio de borda circular */
+}

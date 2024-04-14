@@ -1,11 +1,11 @@
 import {
-	Gear,
+	BracketsCurly,
 	GithubLogo,
 	House,
 	InstagramLogo,
 	LinkedinLogo,
-	List,
-	Phone,
+	RocketLaunch,
+	User,
 	XLogo,
 } from '@phosphor-icons/react'
 import Avatar from './Avatar'
@@ -14,7 +14,7 @@ import SocialLink from './SocialLink'
 
 function Sidebar() {
 	return (
-		<aside className="w-full h-screen bg-gray-950 px-8 select-none border-r border-gray-900">
+		<aside className="w-[300px] h-screen fixed px-8 select-none border-r border-gray-800">
 			<div className="grid place-items-center py-10">
 				<Avatar />
 				<h1 className="font-medium text-xl mb-1 tracking-wider">
@@ -39,9 +39,9 @@ function Sidebar() {
 
 			<div className="flex flex-col gap-1">
 				<Link href="/" text="Página Inicial" IconEl={House} />
-				<Link href="/about" text="Sobre Mim" IconEl={List} />
-				<Link href="/projects" text="Projetos" IconEl={Gear} />
-				<Link href="/contact" text="Contato" IconEl={Phone} />
+				<Link href="/about" text="Sobre Mim" IconEl={User} />
+				<Link href="/projects" text="Projetos" IconEl={BracketsCurly} />
+				<Link href="/contact" text="Contato" IconEl={RocketLaunch} />
 			</div>
 		</aside>
 	)
