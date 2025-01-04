@@ -1,0 +1,31 @@
+{
+  "form": {
+    "title": "#Descubra como sua ideia pode se tornar realidade",
+    "fields": {
+      "name": {
+        "label": "Nome",
+        "name": "name",
+        "type": "text",
+        "placeholder": "Digite seu nome",
+        "required": true
+      },
+      "phone": {
+        "label": "Telefone",
+        "name": "phone",
+        "type": "tel",
+        "placeholder": "(99) 99999-9999",
+        "required": true
+      },
+      "consent": {
+        "label": "Autorizo o uso dos meus dados para contato",
+        "name": "consent",
+        "type": "checkbox",
+        "required": true
+      },
+      "submit": {
+        "label": "Enviar candidatura",
+        "type": "submit"
+      }
+    }
+  }
+}

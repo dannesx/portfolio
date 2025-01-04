@@ -1,0 +1,30 @@
+{
+  "title": "Olá, eu sou o Daniel Antunes!",
+  "description": "Desenvolvedor Full-Stack apaixonado por transformar ideias em experiências digitais de alto impacto",
+  "skills": [
+    {
+      "name": "React",
+      "src": "/icons/react.svg"
+    },
+    {
+      "name": "TailwindCSS",
+      "src": "/icons/tailwind.svg"
+    },
+    {
+      "name": "Node.js",
+      "src": "/icons/nodejs.svg"
+    },
+    {
+      "name": "TypeScript",
+      "src": "/icons/typescript.svg"
+    },
+    {
+      "name": "Python",
+      "src": "/icons/python.svg"
+    }
+  ],
+  "cta": {
+    "label": "Vamos trabalhar juntos?",
+    "href": "#contact"
+  }
+}
