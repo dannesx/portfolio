@@ -1,24 +1,24 @@
 import Badge from "../ui/badge"
 import Grid from "../grid"
-import about from "@/data/about.json"
+import skills from "@/data/skills.json"
 
-const About = () => {
+const Skills = () => {
   return (
     <section className="border">
       <header className="border">
-        <h2 className="py-2 px-8">{about.title}</h2>
+        <h2 className="py-2 px-8">{skills.title}</h2>
       </header>
 
-      <Grid data={about.cells} />
+      <Grid data={skills.services} />
 
       <footer className="p-8 border flex gap-4 flex-wrap">
-        {about.keywords.map((keyword, index) => (
+        {skills.tags.map((tag, index) => (
           <Badge key={index} index={index}>
-            {keyword}
+            {tag}
           </Badge>
         ))}
       </footer>
     </section>
   )
 }
-export default About
+export default Skills

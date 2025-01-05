@@ -1,0 +1,22 @@
+{
+  "title": "- Skills em ação - ",
+  "services": [
+    "Desenvolvimento de aplicações web modernas e responsivas",
+    "Criação de APIs escaláveis utilizando Node.js e Prisma",
+    "Implementação de UI/UX com foco na experiência do usuário",
+    "Integração com serviços de terceiros (auth, pagamento, etc.)",
+    "Deploy de aplicações front-end com foco em performance",
+    "Consultoria e otimização de performance web"
+  ],
+  "tags": [
+    "React",
+    "TailwindCSS",
+    "Node.js",
+    "TypeScript",
+    "Prisma",
+    "Python",
+    "Git/Github",
+    "UX/UI Design",
+    "Figma"
+  ]
+}

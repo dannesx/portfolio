@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Space Grotesk', 'sans-serif'],
+        'sans': ['Inconsolata', 'sans-serif'],
       },
       colors: {
         primary: "#CDB4ff",

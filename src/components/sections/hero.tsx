@@ -17,7 +17,7 @@ const Hero = () => {
         <footer className="border-t-2 bg-primary hover:bg-secondary transition-colors cursor-pointer">
           <a
             href={hero.cta.href}
-            className="flex gap-1 items-center justify-center py-4 uppercase tracking-wide text-center font-medium"
+            className="flex gap-1 items-center justify-center py-4 uppercase tracking-wide text-center font-bold"
           >
             {hero.cta.label}
             <ArrowRightCircle strokeWidth={1.5} />

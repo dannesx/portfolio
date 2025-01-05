@@ -10,7 +10,7 @@ const Marquee = () => {
       >
         {Array.from({ length: 20 }).map((_, index) => (
           <div className="flex items-center gap-6" key={index}>
-            <span className="uppercase tracking-wide font-medium">{marquee}</span>
+            <span className="uppercase tracking-wide font-bold">{marquee}</span>
             <ArrowRightCircle strokeWidth={1.5} />
           </div>
         ))}

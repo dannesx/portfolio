@@ -1,4 +1,4 @@
-import About from "./components/sections/about"
+import About from "./components/sections/skills"
 import Hero from "./components/sections/hero"
 import Navbar from "./components/navbar"
 import WhiteSpace from "./components/white-space"
@@ -9,7 +9,7 @@ const sections = [Hero, About, ContactForm, Projects]
 
 const App = () => {
   return (
-    <main className="container max-w-screen-xl mx-auto p-14 mt-8">
+    <main className="container max-w-screen-xl mx-auto p-14 mt-8 select-none">
       <Navbar />
 
       {sections.map((Section, index) => (
