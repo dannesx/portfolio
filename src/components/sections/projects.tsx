@@ -4,7 +4,7 @@ import Marquee from "../marquee"
 
 const Projects = () => {
   return (
-    <section className="border">
+    <section className="border" id="projects">
       <header className="border">
         <h2 className="px-8 py-2">{projects.title}</h2>
       </header>

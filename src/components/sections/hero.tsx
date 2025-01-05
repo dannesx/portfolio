@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="border-r-2 flex flex-col">
         <div className="p-10 flex-1 flex flex-col justify-center">
           <h1 className="text-6xl font-bold mb-4">{hero.title}</h1>
-          <p className="text-lg mb-4">{hero.description}</p>
+          <p className="mb-4">{hero.description}</p>
           <div className="flex gap-3">
             {hero.skills.map((skill) => (
               <img key={skill.name} src={skill.src} alt={skill.name} />

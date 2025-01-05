@@ -4,7 +4,7 @@ import skills from "@/data/skills.json"
 
 const Skills = () => {
   return (
-    <section className="border">
+    <section className="border" id="skills">
       <header className="border">
         <h2 className="py-2 px-8">{skills.title}</h2>
       </header>

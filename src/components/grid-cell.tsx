@@ -3,6 +3,6 @@ type Props = {
 }
 
 const GridCell = ({ children }: Props) => {
-  return <div className="p-8 border">{children}</div>
+  return <p className="p-8 border leading-tight">{children}</p>
 }
 export default GridCell

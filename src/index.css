@@ -8,6 +8,9 @@
   * {
     @apply border-black font-medium;
   }
+  html {
+    @apply scroll-smooth scroll-pt-6;
+  }
   body {
     @apply antialiased bg-white text-black bg-[url('/texture.png')] bg-repeat mix-blend-multiply;
   }
@@ -34,6 +37,10 @@
 
   h6 {
     @apply text-base;
+  }
+
+  p, span {
+    @apply text-lg;
   }
 
   h1,

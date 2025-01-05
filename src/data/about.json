@@ -1,0 +1,23 @@
+{
+  "title": "- Minha Jornada Profissional -",
+  "paragraphs": [
+    "Olá! Meu nome é Daniel Antunes e sou apaixonado por tecnologia e desenvolvimento de software",
+    "Minha jornada começou em 2020, quando ingressei no curso de Análise e Desenvolvimento de Sistemas, e desde então venho aprimorando minhas habilidades em tecnologias como React, Node.js e TypeScript",
+    "Desde 2022, dou aulas de programação para crianças e adolescentes na escola Ctrl+Play, unindo educação e tecnologia",
+    "Estou sempre em busca de novos desafios que me ajudem a evoluir como profissional e contribuir com projetos relevantes"
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "href": "https://github.com/dannesx"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/dannesx"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/dannesx_"
+    }
+  ]
+}
