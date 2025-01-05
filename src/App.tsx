@@ -5,8 +5,18 @@ import WhiteSpace from "./components/white-space"
 import ContactForm from "./components/sections/contact-form"
 import Projects from "./components/sections/projects"
 import About from "./components/sections/about"
+import Contact from "./components/sections/contact"
+import Footer from "./components/footer"
 
-const sections = [Hero, Skills, ContactForm, Projects, About, ContactForm]
+const sections = [
+  Hero,
+  Skills,
+  ContactForm,
+  Projects,
+  About,
+  ContactForm,
+  Contact,
+]
 
 const App = () => {
   return (
@@ -19,6 +29,8 @@ const App = () => {
           <WhiteSpace />
         </>
       ))}
+
+      <Footer />
     </main>
   )
 }

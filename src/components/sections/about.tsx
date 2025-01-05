@@ -1,5 +1,6 @@
 import about from "@/data/about.json"
 import { Github, Instagram, Linkedin } from "lucide-react"
+import socials from "@/data/socials.json"
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
         </article>
 
         <div className="grid grid-cols-3">
-          {about.socials.map((social, index) => (
+          {socials.map((social, index) => (
             <a
               className="border px-8 py-4 uppercase font-bold tracking-wide flex justify-center items-center gap-1 hover:bg-primary transition-colors"
               key={index}
