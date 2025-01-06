@@ -20,7 +20,7 @@ const sections = [
 
 const App = () => {
   return (
-    <main className="container max-w-screen-xl mx-auto p-14 mt-8 select-none">
+    <main className="container max-w-screen-xl mx-auto lg:p-14 lg:mt-8 select-none">
       <Navbar />
 
       {sections.map((Section, index) => (

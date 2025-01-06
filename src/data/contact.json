@@ -28,7 +28,7 @@
       }
     }
   },
-  "title": "- Meus contatos -",
+  "title": "Meus contatos",
   "description": "Entre em contato comigo para uma consulta ou para discutir novos projetos",
   "contacts": {
     "phone": "(11) 98225-0405",
@@ -36,7 +36,7 @@
     "whatsapp": "https://wa.link/pwo4kw"
   },
   "partners": {
-    "title": "- Parcerias -",
+    "title": "Parcerias",
     "description": "Estou aberto a colaborar em projetos digitais que transformem ideias em soluções. Vamos conversar e impulsionar a inovação juntos!",
     "button": {
       "label": "Vamos trabalhar juntos?",

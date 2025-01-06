@@ -13,7 +13,7 @@ type Props = {
 const Project = ({ data }: Props) => {
   return (
     <div
-      className="relative aspect-square border p-8 data-[bg=primary]:bg-primary data-[bg=secondary]:bg-secondary"
+      className="relative aspect-square border p-4 py-8 lg:p-10 data-[bg=primary]:bg-primary data-[bg=secondary]:bg-secondary"
       data-bg={data.bgColor}
     >
       <h3 className="font-medium text-base">{data.title}</h3>
@@ -22,7 +22,7 @@ const Project = ({ data }: Props) => {
       </p>
 
       <a
-        className="absolute bottom-0 left-0 px-8 py-4 bg-white border-t-2 border-r-2 uppercase tracking-wide font-bold flex gap-2"
+        className="absolute bottom-0 left-0 px-4 lg:px-8 py-4 bg-white border-t-2 border-r-2 uppercase tracking-wide font-bold flex gap-2"
         href={data.link}
       >
         Mais detalhes

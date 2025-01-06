@@ -7,14 +7,14 @@ import { ArrowRightCircle } from "lucide-react"
 const ContactForm = () => {
   const { name, phone, consent, submit } = form.fields
   return (
-    <section className="p-8 border-2 grid grid-cols-6 bg-black text-white items-center">
-      <div className="flex justify-center col-span-2">
-        <h2 className="text-secondary text-right leading-snug">
+    <section className="p-4 py-8 lg:p-10 border-2 grid lg:grid-cols-6 bg-black text-white items-center space-y-6">
+      <div className="flex justify-center lg:col-span-2">
+        <h2 className="text-secondary lg:text-right leading-snug">
           {form.title}
         </h2>
       </div>
 
-      <form className="col-start-4 col-span-2 space-y-4">
+      <form className="lg:col-start-4 lg:col-span-2 space-y-4">
         <div>
           <Label htmlFor={name.name}>{name.label}</Label>
           <Input

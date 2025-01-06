@@ -1,16 +1,22 @@
 type Props = {
   children: React.ReactNode
-  selected?: boolean
+  className?: string
+  hiddenOnMobile?: boolean
   target: string
 }
 
-const NavLink = ({ children, selected, target }: Props) => {
+const NavLink = ({ children, className, target, hiddenOnMobile }: Props) => {
   return (
     <li
-      className=" data-[selected]:bg-black data-[selected]:text-white uppercase hover:bg-secondary hover:data-[last]:bg-secondary transition-colors cursor-pointer "
-      data-selected={selected}
+      className={`uppercase hover:bg-secondary transition-colors cursor-pointer data-[hidden]:hidden  lg:data-[hidden]:block ${className}`}
+      data-hidden={hiddenOnMobile}
     >
-      <a href={target} className="p-3 border flex justify-center text-lg tracking-wide font-bold">{children}</a>
+      <a
+        href={target}
+        className="p-3 border flex justify-center text-lg tracking-wide font-bold"
+      >
+        {children}
+      </a>
     </li>
   )
 }

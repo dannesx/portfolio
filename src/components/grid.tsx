@@ -6,7 +6,7 @@ type Props = {
 
 const Grid = ({ data }: Props) => {
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid lg:grid-cols-3">
       {data.map((item, index) => (
         <GridCell key={index}>{item}</GridCell>
       ))}

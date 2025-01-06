@@ -7,13 +7,18 @@ const Contact = () => {
   const { partners } = contact
 
   return (
-    <section className="border grid grid-cols-2" id="contact">
+    <section className="border grid lg:grid-cols-2" id="contact">
       <div>
         <header className="border">
-          <h2 className="py-2 px-8">{contact.title}</h2>
+          <h2 className="py-2 px-4 lg:px-8">
+            <span className="text-2xl lg:text-3xl text-primary font-extrabold mr-1">
+              #
+            </span>
+            {contact.title}
+          </h2>
         </header>
 
-        <article className="border p-8">
+        <article className="border p-4 py-8 lg:p-10">
           <p className="mb-4">{contact.description}</p>
 
           <div className="flex gap-3 mb-2">
@@ -42,9 +47,14 @@ const Contact = () => {
 
       <div className="flex flex-col">
         <header className="border">
-          <h2 className="py-2 px-8">{partners.title}</h2>
+          <h2 className="py-2 px-4 lg:px-8">
+            <span className="text-2xl lg:text-3xl text-primary font-extrabold mr-1">
+              #
+            </span>
+            {partners.title}
+          </h2>
         </header>
-        <article className="border p-8 flex-1">
+        <article className="border p-4 py-8 lg:p-10 flex-1">
           <p className="mb-4">{partners.description}</p>
         </article>
         <a
