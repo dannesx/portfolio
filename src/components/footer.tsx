@@ -4,10 +4,10 @@ import Socials from "./socials"
 const Footer = () => {
   return (
     <footer className="grid grid-cols-1 lg:grid-cols-6">
-      <div className="border border-t-2 lg:border-2 lg:border-r-0 grid place-items-center py-2 lg:p-0">
+      <div className="hidden lg:grid border border-t-2 lg:border-2 lg:border-r-0 place-items-center py-2 lg:p-0">
         <img src="/logo-black.svg" alt="Dannesx" className="w-8" />
       </div>
-      <ul className="lg:col-span-4 lg:border grid grid-cols-1 lg:grid-cols-4">
+      <ul className="border-t lg:col-span-4 lg:border grid grid-cols-1 lg:grid-cols-4">
         <NavLink target="#skills">Skills</NavLink>
         <NavLink target="#projects">Projetos</NavLink>
         <NavLink target="#about">Sobre mim</NavLink>

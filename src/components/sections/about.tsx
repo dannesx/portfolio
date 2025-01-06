@@ -30,9 +30,9 @@ const About = () => {
               key={index}
               href={social.href}
             >
-              {social.name === "GitHub" && <Github className="h-4 w-4" />}
-              {social.name === "LinkedIn" && <Linkedin className="h-4 w-4" />}
-              {social.name === "Instagram" && <Instagram className="h-4 w-4" />}
+              {social.name === "GitHub" && <Github className="h-4 w-4 hidden lg:block" />}
+              {social.name === "LinkedIn" && <Linkedin className="h-4 w-4 hidden lg:block" />}
+              {social.name === "Instagram" && <Instagram className="h-4 w-4 hidden lg:block" />}
               {social.name}
             </a>
           ))}
