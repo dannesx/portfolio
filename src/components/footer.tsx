@@ -17,7 +17,7 @@ const Footer = () => {
           reservados · Design por Elizaveta Khitrich
         </li>
       </ul>
-      <div className="border lg:border-2 border-l-0 py-4 lg:p-0">
+      <div className="border lg:border-2 lg:border-l-0 py-4 lg:p-0">
         <div className="grid place-items-center h-full">
           <Socials />
         </div>
