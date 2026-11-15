@@ -1,21 +1,33 @@
 import socials from "@/data/socials.json"
-import { Github, Linkedin, Instagram } from "lucide-react"
+import { Github, Instagram, Linkedin } from "lucide-react"
+
+const icons = {
+  GitHub: Github,
+  LinkedIn: Linkedin,
+  Instagram: Instagram,
+}
 
 const Socials = () => {
   return (
-    <div className="flex gap-3">
-      {socials.map((social, index) => (
-        <a
-          className="border-2 p-2 hover:bg-primary transition-colors"
-          key={index}
-          href={social.href}
-        >
-          {social.name === "GitHub" && <Github className="h-5 w-5" />}
-          {social.name === "LinkedIn" && <Linkedin className="h-5 w-5" />}
-          {social.name === "Instagram" && <Instagram className="h-5 w-5" />}
-        </a>
-      ))}
-    </div>
+    <ul className="flex flex-wrap gap-3">
+      {socials.map((social) => {
+        const Icon = icons[social.name as keyof typeof icons]
+        return (
+          <li key={social.name}>
+            <a
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={social.name}
+              className="inline-flex size-11 items-center justify-center rounded-full border-2 border-ink bg-card text-ink shadow-hard transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0_#1A120C] motion-reduce:transition-none"
+            >
+              {Icon ? <Icon className="size-5" aria-hidden="true" /> : social.name}
+            </a>
+          </li>
+        )
+      })}
+    </ul>
   )
 }
+
 export default Socials

@@ -1,40 +1,43 @@
-const plugin = require("tailwindcss/plugin");
-
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Inconsolata', 'sans-serif'],
+        sans: ["DM Sans", "sans-serif"],
+        display: ["Archivo Black", "sans-serif"],
+        mono: ["DM Mono", "ui-monospace", "monospace"],
+        hand: ["Gochi Hand", "cursive"],
       },
       colors: {
-        primary: "#CDB4ff",
-        secondary: "#B4FFC9",
-        black: "#383838",
-        white: "#f5f5f5"
+        paper: "#F4ECDF",
+        ink: "#1A120C",
+        sun: "#FFD000",
+        pop: "#E23A2B",
+        citrus: "#FF6A1A",
+        card: "#FFF8EE",
       },
-      animation: {
-        marquee: "marquee 25s linear infinite",
+      boxShadow: {
+        hard: "3px 3px 0 #1A120C",
+        "hard-md": "4px 4px 0 #1A120C",
+        "hard-lg": "8px 8px 0 #1A120C",
+        sticker: "12px 12px 0 #1A120C",
       },
       keyframes: {
-        marquee: {
+        ticker: {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        drift: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
         },
       },
+      animation: {
+        ticker: "ticker 28s linear infinite",
+        drift: "drift 3.6s ease-in-out infinite",
+      },
     },
-    plugins: [
-      plugin(function ({ addUtilities }) {
-        addUtilities({
-          ".animate-marquee": {
-            animation: "marquee 25s linear infinite",
-          },
-        });
-      }),
-    ],
-  }
+  },
+  plugins: [],
 }

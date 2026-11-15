@@ -1,50 +1,42 @@
 import about from "@/data/about.json"
-import { Github, Instagram, Linkedin } from "lucide-react"
-import socials from "@/data/socials.json"
+import Socials from "../socials"
+
+const tilts = ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "-rotate-[1.5deg]"]
 
 const About = () => {
   return (
-    <section className="border grid lg:grid-cols-2" id="about">
-      <header className="lg:col-span-2 border">
-        <h2 className="py-2 px-4 lg:px-8">
-          <span className="text-2xl lg:text-3xl text-primary font-extrabold mr-1">
-            #
-          </span>
+    <section id="sobre" className="bg-pop py-14 text-ink lg:py-20">
+      <div className="wrap">
+        <p className="mb-2 font-mono text-xs uppercase tracking-[0.14em] text-card">{about.kicker}</p>
+        <h2 className="font-display text-5xl leading-[0.85] tracking-[-0.03em] text-card lg:text-[68px]">
           {about.title}
         </h2>
-      </header>
-
-      <div className="flex flex-col order-2 lg:order-1">
-        <article className="border p-4 py-8 lg:p-10 flex-1 flex flex-col justify-center hyphens-auto">
-          {about.paragraphs.map((paragraph, index) => (
-            <p key={index} className="mb-4 indent-4">
-              {paragraph}
-            </p>
-          ))}
-        </article>
-
-        <div className="grid grid-cols-3">
-          {socials.map((social, index) => (
-            <a
-              className="border px-4 lg:px-8 py-4 uppercase font-bold tracking-wide flex justify-center items-center gap-1 hover:bg-primary transition-colors"
-              key={index}
-              href={social.href}
-            >
-              {social.name === "GitHub" && <Github className="h-4 w-4 hidden lg:block" />}
-              {social.name === "LinkedIn" && <Linkedin className="h-4 w-4 hidden lg:block" />}
-              {social.name === "Instagram" && <Instagram className="h-4 w-4 hidden lg:block" />}
-              {social.name}
-            </a>
-          ))}
+        <div className="mt-8 grid items-start gap-5 lg:grid-cols-2">
+          <article className="rounded-[22px] border-[3px] border-ink bg-card p-6 shadow-hard-lg sm:p-8">
+            {about.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="mb-4 text-base leading-relaxed last:mb-0 sm:text-lg">
+                {paragraph}
+              </p>
+            ))}
+          </article>
+          <ol className="grid gap-3">
+            {about.timeline.map((item, index) => (
+              <li
+                key={item.what}
+                className={`rounded-2xl border-2 border-ink bg-card px-4 py-3 shadow-hard ${tilts[index] ?? ""}`}
+              >
+                <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-pop">{item.when}</p>
+                <p className="mt-1 text-lg font-semibold leading-snug">{item.what}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div className="mt-8">
+          <Socials />
         </div>
       </div>
-
-      <img
-        src="https://github.com/dannesx.png"
-        alt="Daniel Antunes"
-        className="w-full order-1 lg:order-2 aspect-video lg:aspect-square object-cover"
-      />
     </section>
   )
 }
+
 export default About

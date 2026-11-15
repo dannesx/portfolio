@@ -1,9 +1,33 @@
 {
-  "title": "Minha Jornada",
+  "kicker": "Sobre",
+  "title": "Minha jornada",
   "paragraphs": [
-    "Olá! Meu nome é Daniel Antunes e sou apaixonado por tecnologia e desenvolvimento de software",
-    "Minha jornada começou em 2020, quando ingressei no curso de Análise e Desenvolvimento de Sistemas, e desde então venho aprimorando minhas habilidades em tecnologias como React, Node.js e TypeScript",
-    "Desde 2022, dou aulas de programação para crianças e adolescentes na escola Ctrl+Play, unindo educação e tecnologia",
-    "Estou sempre em busca de novos desafios que me ajudem a evoluir como profissional e contribuir com projetos relevantes"
+    "Olá! Meu nome é Daniel Antunes e sou apaixonado por tecnologia e desenvolvimento de software.",
+    "De agosto de 2020 a agosto de 2023 cursei Análise e Desenvolvimento de Sistemas na FATEC Jundiaí.",
+    "Desde 2022 dou aulas de programação para crianças e adolescentes na Ctrl+Play, às terças e quartas à noite.",
+    "Passei pela Satellitus Tecnologia e, desde junho de 2026, sou AI Automation Engineer na Lerian, em São Paulo, na infraestrutura de fintechs.",
+    "Estou cursando o MBA em Engenharia de Software na USP/Esalq (Pecege)."
+  ],
+  "timeline": [
+    {
+      "when": "ago 2020 – ago 2023",
+      "what": "ADS, FATEC Jundiaí"
+    },
+    {
+      "when": "2022 – hoje",
+      "what": "Ctrl+Play, terças e quartas à noite"
+    },
+    {
+      "when": "Satellitus",
+      "what": "Satellitus Tecnologia"
+    },
+    {
+      "when": "jun 2026 – hoje",
+      "what": "Lerian, São Paulo"
+    },
+    {
+      "when": "Em andamento",
+      "what": "MBA em Engenharia de Software, USP/Esalq (Pecege)"
+    }
   ]
 }
