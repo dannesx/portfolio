@@ -1,27 +1,35 @@
-import Badge from "../ui/badge"
-import Grid from "../grid"
 import skills from "@/data/skills.json"
 
 const Skills = () => {
   return (
-    <section className="border" id="skills">
-      <header className="border">
-        <h2 className="py-2 px-4 lg:px-8">
-          <span className="text-2xl lg:text-3xl text-primary font-extrabold mr-1">#</span>
+    <section id="skills" className="bg-ink py-14 text-card lg:py-20">
+      <div className="wrap">
+        <p className="mb-2 font-mono text-xs uppercase tracking-[0.14em] text-sun">{skills.kicker}</p>
+        <h2 className="font-display text-5xl leading-[0.85] tracking-[-0.03em] lg:text-[68px]">
           {skills.title}
         </h2>
-      </header>
-
-      <Grid data={skills.services} />
-
-      <footer className="p-4 py-8 lg:p-10 border flex gap-4 flex-wrap justify-center lg:justify-start">
-        {skills.tags.map((tag, index) => (
-          <Badge key={index} index={index}>
-            {tag}
-          </Badge>
-        ))}
-      </footer>
+        <ol className="mt-8 max-w-3xl">
+          {skills.services.map((service, index) => (
+            <li key={service} className="flex gap-4 border-b border-card/15 py-4 text-lg leading-snug">
+              <span className="w-8 shrink-0 font-mono text-sm text-sun" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span>{service}</span>
+            </li>
+          ))}
+        </ol>
+        <ul className="mt-8 flex flex-wrap gap-2">
+          {skills.tags.map((tag) => (
+            <li key={tag}>
+              <span className="inline-flex h-10 items-center rounded-full bg-sun px-3 font-mono text-xs uppercase tracking-[0.04em] text-ink">
+                {tag}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }
+
 export default Skills

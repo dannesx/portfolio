@@ -1,20 +1,38 @@
 {
-  "title": "Últimos projetos",
-  "relevants": [
+  "kicker": "Destaque + laboratório",
+  "title": "Projetos",
+  "hand": "um grande, dois no forno",
+  "featured": {
+    "title": "Petgram",
+    "description": "Rede social em TypeScript. O front em React publica fotos com legenda; a API em Express e Prisma cuida de contas, posts, curtidas e comentários.",
+    "tags": ["TypeScript", "React", "Express", "Prisma"],
+    "links": [
+      {
+        "label": "Front",
+        "href": "https://github.com/dannesx/petgram-app",
+        "tone": "ink"
+      },
+      {
+        "label": "API",
+        "href": "https://github.com/dannesx/petgram-api",
+        "tone": "card"
+      }
+    ]
+  },
+  "lab": [
     {
-      "title": "Projeto 1",
-      "description": "Descrição do projeto 1",
-      "bgColor": "primary",
-      "image": "https://via.placeholder.com/150",
-      "link": "https://www.google.com"
+      "label": "Python",
+      "title": "Ctrl Day",
+      "description": "Programação e robótica para o Ctrl+Day da Ctrl+Play Jundiaí. ESP32, Arduino e interfaces.",
+      "href": "https://github.com/dannesx/ctrl-day-projects",
+      "status": "Em andamento"
     },
     {
-      "title": "Projeto 2",
-      "description": "Descrição do projeto 2",
-      "bgColor": "secondary",
-      "image": "https://via.placeholder.com/150",
-      "link": "https://www.google.com"
+      "label": "ESP32",
+      "title": "ESP32 OLED",
+      "description": "Relógio NTP, Jokenpo com gestos pela webcam e editor de telas no OLED SSD1306.",
+      "href": "https://github.com/dannesx/esp32",
+      "status": "Em andamento"
     }
-  ],
-  "marquee": "Ver outros projetos"
+  ]
 }

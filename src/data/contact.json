@@ -1,6 +1,8 @@
 {
   "form": {
     "title": "Descubra como sua ideia pode se tornar realidade",
+    "hint": "O envio abre uma conversa no WhatsApp com seu nome e telefone.",
+    "whatsapp": "https://wa.me/5511982250405",
     "fields": {
       "name": {
         "label": "Nome",
@@ -19,12 +21,10 @@
       "consent": {
         "label": "Autorizo o uso dos meus dados para contato",
         "name": "consent",
-        "type": "checkbox",
         "required": true
       },
       "submit": {
-        "label": "Enviar candidatura",
-        "type": "submit"
+        "label": "Enviar mensagem"
       }
     }
   },

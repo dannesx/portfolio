@@ -1,54 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-black font-medium;
-  }
   html {
-    @apply scroll-smooth scroll-pt-6;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
   }
+
   body {
-    @apply antialiased bg-white text-black bg-[url('/texture.png')] bg-repeat mix-blend-multiply;
+    @apply bg-paper text-ink font-sans antialiased;
   }
 
-  h1 {
-    @apply text-3xl lg:text-4xl;
+  :focus-visible {
+    outline: 3px solid #e23a2b;
+    outline-offset: 3px;
+  }
+}
+
+.wrap {
+  width: min(1160px, calc(100% - 36px));
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    width: min(1160px, calc(100% - 96px));
+  }
+}
+
+.stripes {
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr 1fr 0.35fr;
+  height: 12px;
+}
+
+.stripes span:nth-child(1) {
+  background: #e23a2b;
+}
+
+.stripes span:nth-child(2) {
+  background: #ffd000;
+}
+
+.stripes span:nth-child(3) {
+  background: #1a120c;
+}
+
+.stripes span:nth-child(4) {
+  background: #ff6a1a;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 0.14;
+  mix-blend-mode: multiply;
+  background-image: url("/noise.svg");
+  background-size: 180px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  h2 {
-    @apply text-2xl lg:text-3xl;
-  }
-
-  h3 {
-    @apply text-xl lg:text-2xl;
-  }
-
-  h4 {
-    @apply text-lg lg:text-xl;
-  }
-
-  h5 {
-    @apply text-base lg:text-lg;
-  }
-
-  h6 {
-    @apply text-base;
-  }
-
-  p, span {
-    @apply text-base lg:text-lg;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold uppercase;
+  .animate-ticker,
+  .animate-drift {
+    animation: none !important;
   }
 }

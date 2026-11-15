@@ -1,5 +1,7 @@
 {
+  "kicker": "Skills",
   "title": "Skills em ação",
+  "ticker": ["React", "TypeScript", "Node.js", "Python", "Tailwind", "Prisma"],
   "services": [
     "Desenvolvimento de aplicações web modernas e responsivas",
     "Criação de APIs escaláveis utilizando Node.js e Prisma",

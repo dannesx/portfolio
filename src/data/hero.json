@@ -1,30 +1,20 @@
 {
-  "title": "Olá, eu sou o Daniel Antunes!",
-  "description": "Desenvolvedor Full-Stack apaixonado por transformar ideias em experiências digitais de alto impacto",
-  "skills": [
+  "eyebrow": "AI Automation Engineer · Lerian · São Paulo",
+  "name": ["Daniel", "Antunes"],
+  "description": "Apaixonado por transformar ideias em experiências digitais de alto impacto.",
+  "hand": "dannesx →",
+  "badge": ["Ctrl+Play", "terças e quartas, à noite"],
+  "portrait": "https://github.com/dannesx.png",
+  "links": [
     {
-      "name": "React",
-      "src": "/icons/react.svg"
+      "label": "GitHub",
+      "href": "https://github.com/dannesx",
+      "tone": "ink"
     },
     {
-      "name": "TailwindCSS",
-      "src": "/icons/tailwind.svg"
-    },
-    {
-      "name": "Node.js",
-      "src": "/icons/nodejs.svg"
-    },
-    {
-      "name": "TypeScript",
-      "src": "/icons/typescript.svg"
-    },
-    {
-      "name": "Python",
-      "src": "/icons/python.svg"
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/dannesx",
+      "tone": "card"
     }
-  ],
-  "cta": {
-    "label": "Acesse meu github",
-    "href": "https://github.com/dannesx"
-  }
+  ]
 }
